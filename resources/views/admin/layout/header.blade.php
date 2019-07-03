@@ -9,6 +9,7 @@
         </button>
         <a class="navbar-brand">Quản trị website</a>
         <a class="navbar-brand" href="trangchu">Trang chủ</a>
+        <a class="navbar-brand" href="homepage">Homepage</a>
     </div>
     <!-- /.navbar-header -->
 
@@ -24,10 +25,8 @@
                 @if(Auth::check())
                 <li><a href="admin/user/sua/{{Auth::user()->id}}"><i class="fa fa-user fa-fw"></i> {{Auth::user()->name}}</a>
                 </li>
-                <li><a href="admin/user/sua/{{Auth::user()->id}}"><i class="fa fa-gear fa-fw"></i> Thông tin người dùng</a>
-                </li>
-                <li class="divider"></li>
-                <li><a href="admin/dangxuat"><i class="fa fa-sign-out fa-fw"></i> Đăng xuất</a>
+                <li><a href="logout"><i class="fa fa-sign-out fa-fw"></i> Đăng xuất</a>
+                <li><a href="logout"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                 </li>
                 @endif
             </ul>
